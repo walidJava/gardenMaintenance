@@ -14,7 +14,7 @@ import java.util.List;
 
 import static org.gerdenmaintenance.domain.usecase.mowthelawn.entity.Instruction.*;
 
-@DisplayName("Tondre la pelouse")
+@DisplayName("Test du useCase Tondre la pelouse")
 public class MowTheLawnUseCaseTest {
 
     MowTheLawnUseCase mowTheLawnUseCase;

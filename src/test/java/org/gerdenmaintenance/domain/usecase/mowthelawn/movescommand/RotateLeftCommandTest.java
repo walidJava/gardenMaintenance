@@ -22,13 +22,13 @@ public class RotateLeftCommandTest {
     @CsvSource({"N,W", "W,S", "S,E", "E,N"})
     void testRotateLeft(String input, String expected) {
         // GIVEN
-        Garden garden = new Garden(new Coordinate(5,5));
-        Lawnmower lawnmower = new Lawnmower(new Coordinate(2,2), Orientation.valueOf(input));
+        Garden garden = new Garden(new Coordinate(5, 5));
+        Lawnmower lawnmower = new Lawnmower(new Coordinate(2, 2), Orientation.valueOf(input));
 
         // WHEN
         Lawnmower result = rotateLeftCommand.process(lawnmower, garden);
 
         // THEN
-        Assertions.assertThat(result).isEqualTo(new Lawnmower(new Coordinate(2,2), Orientation.valueOf(expected)));
+        Assertions.assertThat(result).isEqualTo(new Lawnmower(new Coordinate(2, 2), Orientation.valueOf(expected)));
     }
 }
